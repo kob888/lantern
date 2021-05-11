@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html>
+    <head>  
+        <meta chrset="UTF8">
+        <link rel="stylesheet" href="style.css">  
+    </head>
+    <body>
+        <main>
+            <div class="lantern"></div>
+        </main>
+        <script>
+            var light = document.querySelector(".lantern");
+            document.addEventListener("mousemove", function(e){
+                var x = e.pageX;
+                var y = e.pageY;
+                light.style.background = "radial-gradient(circle at " + x + "px " + y + 'px, transparent, #000 30%)';
+            })
+        </script>     
+    </body>
+</html>
